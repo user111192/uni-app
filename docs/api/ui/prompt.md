@@ -28,8 +28,8 @@
 
 ```javascript
 uni.showToast({
-	title: '标题',
-	duration: 2000
+	title: '标题',// 标题
+	duration: 2000// 延时
 });
 ```
 
@@ -50,7 +50,7 @@ uni.showToast({
 
 ### uni.hideToast()
 
-隐藏消息提示框。
+隐藏`消息`提示框。
 
 **示例**
 
@@ -115,26 +115,26 @@ setTimeout(function () {
 |content|String|否|提示的内容||
 |showCancel|Boolean|否|是否显示取消按钮，默认为 true||
 |cancelText|String|否|取消按钮的文字，默认为"取消"，最多 4 个字符||
-|cancelColor|HexColor|否|取消按钮的文字颜色，默认为"#000000"|H5、微信小程序、百度小程序|
+|cancelColor|HexColor|否|取消按钮的文字颜色，默认为"`#000000`"|H5、微信小程序、百度小程序|
 |confirmText|String|否|确定按钮的文字，默认为"确定"，最多 4 个字符||
-|confirmColor|HexColor|否|确定按钮的文字颜色，H5平台默认为"#007aff"，微信小程序平台默认为"#3CC51F"，百度小程序平台默认为"#3c76ff"|H5、微信小程序、百度小程序|
+|confirmColor|HexColor|否|确定按钮的文字颜色，H5平台默认为"`#007aff`"，微信小程序平台默认为"`#3CC51F`"，百度小程序平台默认为"`#3c76ff`"|H5、微信小程序、百度小程序|
 |success|Function|否|接口调用成功的回调函数||
 |fail|Function|否|接口调用失败的回调函数||
-|complete|Function|否|接口调用结束的回调函数（调用成功、失败都会执行）|&nbsp;|
+|complete|Function|否|接口调用结束的回调函数（调用`成功`、`失败`都会执行）|&nbsp;|
 
 **注意**
 
-- 钉钉小程序真机与模拟器表现有差异，真机title，content均为必填项
+- 钉钉小程序真机与模拟器表现有差异，真机`title`，`content`均为必填项
 
 **success返回参数说明**
 
 |参数|类型|说明|
 |:-|:-|:-|:-|
 |confirm|Boolean|为 true 时，表示用户点击了确定按钮|
-|cancel|Boolean|为 true 时，表示用户点击了取消（用于 Android 系统区分点击蒙层关闭还是点击取消按钮关闭）|
+|cancel|Boolean|为 true 时，表示用户点击了取消（用于 Android 系统区分点击`蒙层`关闭还是点击取消按钮关闭）|
 
 **Tips：**
-* 在 App 下可以使用 [原生增强提示框插件](https://ext.dcloud.net.cn/plugin?id=36) 来解决 App 无法设置 cancelColor、confirmColor的问题。
+* 在 App 下可以使用 [原生增强提示框插件](https://ext.dcloud.net.cn/plugin?id=36) 来解决 App 无法设置 `cancelColor`、`confirmColor`的问题。
 
 
 **示例**
@@ -181,7 +181,7 @@ uni.showModal({
 
 |参数|类型|说明|
 |:-|:-|:-|
-|tapIndex|Number|用户点击的按钮，从上到下的顺序，从0开始|
+|tapIndex|Number|用户点击的按钮，从上到下的顺序，从`0`开始|
 
 **示例**
 
@@ -199,11 +199,11 @@ uni.showActionSheet({
 
 **Tips**
 
-- App平台，iPad设备支持设置弹出框的位置，详见 [plus.nativeUI的文档](https://www.html5plus.org/doc/zh_cn/nativeui.html#plus.nativeUI.ActionSheetStyles)
+- App平台，iPad设备支持设置弹出框的位置，详见 [`plus.nativeUI`的文档](https://www.html5plus.org/doc/zh_cn/nativeui.html#plus.nativeUI.ActionSheetStyles)
 - App平台，实现原生的、复杂的底部图文菜单，例如分享菜单，可参考[https://ext.dcloud.net.cn/plugin?id=69](https://ext.dcloud.net.cn/plugin?id=69)
 
 **注意**
 
 - 在非H5端，本章的所有弹出控件都是原生控件，层级最高，可覆盖video、map、tabbar等原生控件。
-- [uni-app插件市场](https://ext.dcloud.net.cn/)有很多封装好的前端组件，但注意前端组件层级不是最高，无法覆盖原生组件，除非使用cover-view或nvue。
+- [uni-app插件市场](https://ext.dcloud.net.cn/)有很多封装好的前端组件，但注意前端组件层级不是最高，无法覆盖原生组件，除非使用`cover-view`或`nvue`。
 - App端还有原生的[prompt API](https://www.html5plus.org/doc/zh_cn/nativeui.html#plus.nativeUI.prompt)
