@@ -16,6 +16,6 @@
 
 ```javascript
 uni.onUserCaptureScreen(function() {
-    console.log('用户截屏了')
+    console.log('用户截屏了');
 });
 ```
