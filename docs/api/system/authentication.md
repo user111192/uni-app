@@ -4,7 +4,7 @@
 
 ### uni.startSoterAuthentication(OBJECT)
 
-开始 SOTER 生物认证。
+开始 `SOTER` 生物认证。
 
 **平台差异说明**
 
@@ -34,7 +34,7 @@ App端在2.3.8版以前，可在插件市场获取[指纹相关插件](https://e
 
 注意：
 - App端指纹识别，Android平台从Android6.0起才提供了官方API，uni-app也是从Android6起支持。对于更低版本的安卓，某些rom私有的指纹识别API，uni-app并不支持。
-- App端人脸识别，iOS平台使用自带的faceID，而Android平台需要依赖三方SDK方可实现，可在插件市场搜索[人脸识别](https://ext.dcloud.net.cn/search?q=%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB)插件
+- App端人脸识别，iOS平台可以使用自带的faceID，而Android平台**必须**需要依赖三方SDK方可实现，可在插件市场搜索[人脸识别](https://ext.dcloud.net.cn/search?q=%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB)插件
 
 
 **OBJECT.success返回值说明**
